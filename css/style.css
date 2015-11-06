@@ -134,4 +134,10 @@ a{color:#000; text-decoration:none;-webkit-tap-highlight-color: rgba(255, 255, 2
 .dFont1,.dFont3 {left:41px;width:248px;}
 .dFont0,.dFont2,.dFont4 {left:349px;width:292px;}
 .dFont0on {animation:showAnim 0.5s 1 0.5s ease forwards;-webkit-animation:showAnim 0.5s 1 0.5s ease forwards;}
+<<<<<<< HEAD
 .dFont1on,.dFont3on,.dFont2on,.dFont4on {animation:showAnim 0.5s 1 ease forwards;-webkit-animation:showAnim 0.5s 1 ease forwards;}
+=======
+.dFont1on,.dFont3on,.dFont2on,.dFont4on {animation:showAnim 0.5s 1 ease forwards;-webkit-animation:showAnim 0.5s 1 ease forwards;}
+.iMusic {right:0;top:5px;width:128px;height:136px;background:url(../images/yMusic.png) no-repeat;background-size:128px 272px;}
+.iMusicOn {background-position:0 -136px;}
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe

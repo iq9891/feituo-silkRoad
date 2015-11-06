@@ -28,6 +28,10 @@ $(function(){
 		bTime = null,
 		bCnoUp = false,
 		bCnoDown = false,
+<<<<<<< HEAD
+=======
+		bClick = true,
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe
 		bCpos = [	//left，top，opacity,zIndex
 			[83,272,0.6,1,'cBox0on'],
 			[62,295,1,2,'cBox1on']
@@ -51,6 +55,12 @@ $(function(){
 
 	//注册
 	regFn();
+<<<<<<< HEAD
+=======
+
+	//音乐
+	musicFn();
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe
 	
 	//骆驼动画
 	animTopFn();
@@ -59,6 +69,11 @@ $(function(){
 		if(document.readyState == 'complete'){aInFn();} 
 	}
 
+<<<<<<< HEAD
+=======
+	$('.cs1').on(od, gotoUpFn);
+	$('.cs2').on(od, gotoDownFn);
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe
 	//滑动
 	$(document).swipeUp(function(){
 		gotoUpFn();
@@ -105,7 +120,11 @@ $(function(){
 		}
 	}
 	function gotoDownFn(e){
+<<<<<<< HEAD
 			if(iNow==4){bCanMove = true;}
+=======
+		if(iNow==4){bCanMove = true;}
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe
 		if(!bCanMove){return;}
 		if(bCnoDown){
 			if(iPerperNow==3){
@@ -307,6 +326,26 @@ $(function(){
 		},100);
 		$bImg3Anim.eq(iNow)
 	};
+<<<<<<< HEAD
+=======
+	//音乐方法
+	function musicFn(){
+		var $iMusic = $(".iMusic"),
+			audio = $("#audio").get(0),
+			od = 'ontouchstart' in window ? "touchstart":"click";
+		$iMusic.on(od, playFn);
+		function playFn(){
+			if(bClick){
+				$iMusic.addClass("iMusicOn");
+				audio.pause();
+			}else{
+				$iMusic.removeClass("iMusicOn");
+				audio.play();
+			}
+			bClick = !bClick;
+		}
+	}
+>>>>>>> a024a7b8329b3e70388860f50a9c498fcdb68cbe
 });
 
 //单选
